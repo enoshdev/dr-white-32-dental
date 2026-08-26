@@ -4,7 +4,10 @@ import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const DB_PATH = path.join(__dirname, 'data', 'leads.json');
+const isServerless = Boolean(process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_VERSION);
+const DB_PATH = isServerless 
+  ? path.join('/tmp', 'leads.json') 
+  : path.join(__dirname, 'data', 'leads.json');
 
 // Ensure data directory exists
 const ensureDb = () => {

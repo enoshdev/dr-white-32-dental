@@ -157,14 +157,19 @@ app.get('/api/admin/stats', (req, res) => {
   }
 });
 
-// Serve frontend in production if built
-if (process.env.NODE_ENV === 'production') {
+// Serve frontend in production if running standalone (not on Vercel)
+if (process.env.NODE_ENV === 'production' && !process.env.VERCEL) {
   app.use(express.static(path.join(__dirname, '../dist')));
   app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../dist/index.html'));
   });
 }
 
-app.listen(PORT, () => {
-  console.log(`🚀 Dr's White 32 Dental API Server running on port ${PORT}`);
-});
+// Only start the server directly if executed as standalone script (e.g., node server/index.js or npm run dev)
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`🚀 Dr's White 32 Dental API Server running on port ${PORT}`);
+  });
+}
+
+export default app;
