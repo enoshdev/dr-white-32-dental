@@ -1,0 +1,63 @@
+[
+  {
+    "lead_id": "W32-1099",
+    "clinic_id": "dr-white-32-dental",
+    "patient_name": "Sunil Rao",
+    "phone": "9876543210",
+    "email": "sunil.rao@example.com",
+    "service": "Dental Implants",
+    "preferred_date": "2026-08-28",
+    "preferred_time": "11:30 AM",
+    "message": "Interested in single tooth implant.",
+    "patient_type": "New Patient",
+    "source": "website",
+    "status": "NEW",
+    "follow_up_status": "PENDING",
+    "created_at": "2026-08-24T15:21:56.335Z"
+  },
+  {
+    "lead_id": "W32-1082",
+    "clinic_id": "dr-white-32-dental",
+    "patient_name": "Ananya Reddy",
+    "phone": "9849012345",
+    "email": "ananya.r@example.com",
+    "service": "Smile Designing",
+    "preferred_date": "2026-08-26",
+    "preferred_time": "05:30 PM",
+    "message": "Interested in cosmetic smile alignment and teeth whitening options.",
+    "source": "website",
+    "status": "CONFIRMED",
+    "follow_up_status": "COMPLETED",
+    "created_at": "2026-08-23T15:21:56.332Z"
+  },
+  {
+    "lead_id": "W32-1083",
+    "clinic_id": "dr-white-32-dental",
+    "patient_name": "Karthik Varma",
+    "phone": "9988776655",
+    "email": "karthik.v@example.com",
+    "service": "Dental Implants",
+    "preferred_date": "2026-08-27",
+    "preferred_time": "11:00 AM",
+    "message": "Need consultation for lower molar implant replacement.",
+    "source": "ai_receptionist",
+    "status": "CONTACTED",
+    "follow_up_status": "PENDING",
+    "created_at": "2026-08-24T10:21:56.332Z"
+  },
+  {
+    "lead_id": "W32-1084",
+    "clinic_id": "dr-white-32-dental",
+    "patient_name": "Priya Sharma",
+    "phone": "9123456780",
+    "email": "priya.s@example.com",
+    "service": "Root Canal Treatment",
+    "preferred_date": "2026-08-25",
+    "preferred_time": "04:00 PM",
+    "message": "Mild toothache on upper right premolar.",
+    "source": "whatsapp_demo",
+    "status": "NEW",
+    "follow_up_status": "PENDING",
+    "created_at": "2026-08-24T14:21:56.332Z"
+  }
+]
